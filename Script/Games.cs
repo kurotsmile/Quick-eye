@@ -1,7 +1,6 @@
 ﻿using Carrot;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -32,6 +31,7 @@ public class Games : MonoBehaviour
     private int sel_index_item_box;
     public Sprite[] icon_item_box;
     public Sprite[] arr_icon_offline;
+    public string[] s_name_category;
 
     [Header("Game Select Box")]
     public Sprite icon_one_player;
@@ -202,6 +202,7 @@ public class Games : MonoBehaviour
         this.carrot.clear_contain(this.area_body_player_2);
 
         StructuredQuery q = new("icon");
+        q.Add_where("category", Query_OP.EQUAL, this.s_name_category[this.sel_index_item_box]);
         if (this.is_one_play)
             leng_item_cur = 3 + (this.level * 2);
         else
@@ -238,7 +239,7 @@ public class Games : MonoBehaviour
             this.carrot.hide_loading();
             this.GetComponent<Game_Rank>().upload_rank(this.level, this.sel_index_item_box);
         }
-        else
+        else 
         {
             this.carrot.server.Get_doc(q.ToJson(), act_get_list_image);
         }
@@ -654,22 +655,31 @@ public class Games : MonoBehaviour
 
     private void act_get_list_image(string s_data)
     {
-        IList all_image = (IList)Carrot.Json.Deserialize(s_data);
-        this.leng_img = all_image.Count;
-        this.list_img = new List<Sprite>();
-        this.cur_img = 0;
-        for (int i = 0; i < all_image.Count; i++)
+        Fire_Collection fc = new(s_data);
+        if (!fc.is_null)
         {
-            IDictionary data_icon = (IDictionary)all_image[i];
-            Debug.Log("ID:" + data_icon["id"]+" type:" + data_icon["type"]);
-            Sprite sp_pic = this.data_cache.check_pic(data_icon["id"].ToString());
-            if (sp_pic!=null)
+            IList all_image = (IList)Json.Deserialize("[]");
+            for(int i = 0; i < fc.fire_document.Length; i++)
             {
-                this.list_img.Add(sp_pic);
-                this.check_full_pic_load_game();
-            }  
-            else
-                StartCoroutine(this.LoadPictureToList(data_icon["url"].ToString(), data_icon["id"].ToString(), data_icon["type"].ToString()));
+                all_image.Add(fc.fire_document[i].Get_IDictionary());
+            }
+
+            this.leng_img = all_image.Count;
+            this.list_img = new List<Sprite>();
+            this.cur_img = 0;
+            for (int i = 0; i < all_image.Count; i++)
+            {
+                IDictionary data_icon = (IDictionary)all_image[i];
+                Debug.Log("ID:" + data_icon["id"] + " type:" + data_icon["category"].ToString());
+                Sprite sp_pic = this.data_cache.check_pic(data_icon["id"].ToString());
+                if (sp_pic != null)
+                {
+                    this.list_img.Add(sp_pic);
+                    this.check_full_pic_load_game();
+                }
+                else
+                    StartCoroutine(this.LoadPictureToList(data_icon["icon"].ToString(), data_icon["id"].ToString(), data_icon["category"].ToString()));
+            }
         }
     }
 
