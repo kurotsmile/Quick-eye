@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +12,7 @@ public class Data_cache : MonoBehaviour
         Debug.Log("length_pic:" + this.length_pic);
     }
 
-    public void add_cache(string s_id,string s_type,Texture2D pic)
+    public void Add_cache(string s_id,string s_type,Texture2D pic)
     {
         PlayerPrefs.SetString("id_"+this.length_pic, s_id);
         PlayerPrefs.SetString("type_"+this.length_pic, s_type);
@@ -42,9 +41,9 @@ public class Data_cache : MonoBehaviour
         return list_pic;
     }
 
-    public List<Sprite> get_list_type_length(string s_type,int leng_get)
+    public List<Sprite> Get_list_type_length(string s_type,int leng_get)
     {
-        List<Sprite> list_pic_new = new List<Sprite>();
+        List<Sprite> list_pic_new = new();
         List<Sprite> list_pic = this.get_list_by_type(s_type);
         this.Shuffle(list_pic);
 
@@ -55,7 +54,7 @@ public class Data_cache : MonoBehaviour
         return list_pic_new;
     }
 
-    public bool check_length_by_type(string leng_type,int leng_check)
+    public bool Check_length_by_type(string leng_type,int leng_check)
     {
         List<Sprite> list_pic = this.get_list_by_type(leng_type);
         if (list_pic.Count > leng_check)
@@ -68,7 +67,7 @@ public class Data_cache : MonoBehaviour
     {
         for (int i = a.Count - 1; i > 0; i--)
         {
-            int rnd = UnityEngine.Random.Range(0, i);
+            int rnd = Random.Range(0, i);
             Sprite temp = a[i];
             a[i] = a[rnd];
             a[rnd] = temp;

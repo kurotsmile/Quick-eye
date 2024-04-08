@@ -231,10 +231,10 @@ public class Games : MonoBehaviour
             this.game2_player2_select_two = null;
         }
 
-        if (this.data_cache.check_length_by_type(this.sel_index_item_box.ToString(),this.leng_item_cur))
+        if (this.data_cache.Check_length_by_type(this.sel_index_item_box.ToString(),this.leng_item_cur))
         {
             this.leng_img = this.leng_item_cur;
-            this.list_img = this.data_cache.get_list_type_length(this.sel_index_item_box.ToString(), this.leng_img);
+            this.list_img = this.data_cache.Get_list_type_length(this.sel_index_item_box.ToString(), this.leng_img);
             this.load_level_play();
             this.carrot.hide_loading();
             this.GetComponent<Game_Rank>().upload_rank(this.level, this.sel_index_item_box);
@@ -693,7 +693,7 @@ public class Games : MonoBehaviour
         {
             Texture2D profilePic = ((DownloadHandlerTexture)www.downloadHandler).texture;
             this.list_img.Add(Sprite.Create(profilePic, new Rect(0, 0, profilePic.width, profilePic.height), new Vector2(0, 0)));
-            this.data_cache.add_cache(id, type, profilePic);
+            this.data_cache.Add_cache(id, type, profilePic);
             this.check_full_pic_load_game();
         }
     }

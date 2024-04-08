@@ -3,10 +3,7 @@ using UnityEngine;
 public class Game_Rank : MonoBehaviour
 {
     public Carrot.Carrot carrot;
-    public Sprite icon_list_rank;
     public Sprite icon_list_history;
-    public GameObject item_rank_prefab;
-    public GameObject item_history_prefab;
     private int length_history = 0;
     public Color32 color_me_rank;
 
