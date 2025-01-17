@@ -99,6 +99,7 @@
     <Compile Include="Assets\Quick-eye\KY_effects\Script\ConGUI.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_game.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot.cs" />
+    <Compile Include="Assets\Scripts\UnityPurchasing\generated\GooglePlayTangle.cs" />
     <Compile Include="Assets\Quick-eye\Script\Item_rank.cs" />
     <Compile Include="Assets\Quick-eye\Script\Data_cache.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Rate.cs" />
