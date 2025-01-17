@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "J:\\Unity3d Project\\Quick eye\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|j:\\unity3d project\\quick eye\\assets\\carrot-framework-unity\\carrot_script\\carrot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|solutionrelative:assets\\carrot-framework-unity\\carrot_script\\carrot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|j:\\unity3d project\\quick eye\\assets\\quick-eye\\script\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|solutionrelative:assets\\quick-eye\\script\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|j:\\unity3d project\\quick eye\\assets\\carrot-framework-unity\\carrot_script\\carrot_window_user_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|solutionrelative:assets\\carrot-framework-unity\\carrot_script\\carrot_window_user_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|j:\\unity3d project\\quick eye\\assets\\quick-eye\\script\\game_rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|solutionrelative:assets\\quick-eye\\script\\game_rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|j:\\unity3d project\\quick eye\\assets\\quick-eye\\script\\data_cache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DAA5405-3B71-1058-5F06-04A0A2232E7B}|Assembly-CSharp.csproj|solutionrelative:assets\\quick-eye\\script\\data_cache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Carrot.cs",
+              "DocumentMoniker": "J:\\Unity3d Project\\Quick eye\\Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot.cs",
+              "RelativeDocumentMoniker": "Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot.cs",
+              "ToolTip": "J:\\Unity3d Project\\Quick eye\\Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot.cs",
+              "RelativeToolTip": "Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot.cs",
+              "ViewState": "AQIAAKAEAAAAAAAAAAAAALQEAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:52:14.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Carrot_Window_User_Login.cs",
+              "DocumentMoniker": "J:\\Unity3d Project\\Quick eye\\Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot_Window_User_Login.cs",
+              "RelativeDocumentMoniker": "Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot_Window_User_Login.cs",
+              "ToolTip": "J:\\Unity3d Project\\Quick eye\\Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot_Window_User_Login.cs",
+              "RelativeToolTip": "Assets\\Carrot-Framework-Unity\\carrot_script\\Carrot_Window_User_Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:48:25.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Data_cache.cs",
+              "DocumentMoniker": "J:\\Unity3d Project\\Quick eye\\Assets\\Quick-eye\\Script\\Data_cache.cs",
+              "RelativeDocumentMoniker": "Assets\\Quick-eye\\Script\\Data_cache.cs",
+              "ToolTip": "J:\\Unity3d Project\\Quick eye\\Assets\\Quick-eye\\Script\\Data_cache.cs",
+              "RelativeToolTip": "Assets\\Quick-eye\\Script\\Data_cache.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:41:45.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game_Rank.cs",
+              "DocumentMoniker": "J:\\Unity3d Project\\Quick eye\\Assets\\Quick-eye\\Script\\Game_Rank.cs",
+              "RelativeDocumentMoniker": "Assets\\Quick-eye\\Script\\Game_Rank.cs",
+              "ToolTip": "J:\\Unity3d Project\\Quick eye\\Assets\\Quick-eye\\Script\\Game_Rank.cs",
+              "RelativeToolTip": "Assets\\Quick-eye\\Script\\Game_Rank.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:29:38.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Games.cs",
+              "DocumentMoniker": "J:\\Unity3d Project\\Quick eye\\Assets\\Quick-eye\\Script\\Games.cs",
+              "RelativeDocumentMoniker": "Assets\\Quick-eye\\Script\\Games.cs",
+              "ToolTip": "J:\\Unity3d Project\\Quick eye\\Assets\\Quick-eye\\Script\\Games.cs",
+              "RelativeToolTip": "Assets\\Quick-eye\\Script\\Games.cs",
+              "ViewState": "AQIAAJ8BAAAAAAAAAAAAALEBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T13:57:55.437Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
